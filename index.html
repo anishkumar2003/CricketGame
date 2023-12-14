@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ Cricket game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bat Ball stump game</h1>
+
+        <button class="btn" onclick=" Click_sound.play()
+        const umsg='you have choosen Bat'; 
+        let c_choice=computerchoice();
+        let resultmsg=compteresult('BAT',c_choice);
+        showresult(umsg,c_choice,resultmsg);   
+        "><img src="images/bat.png" alt="Bat"></button>
+
+        <button class="btn" onclick="
+        Click_sound.play()
+        umsg='you have choosen BALL';
+        c_choice=computerchoice();
+        resultmsg=compteresult('BALL',c_choice);
+        showresult(umsg,c_choice,resultmsg);   
+        "><img src="images/ball.png" alt="ball"></button>
+
+        <button class="btn" onclick="
+        Click_sound.play()
+        umsg='you have choosen stump';
+        c_choice=computerchoice();
+        resultmsg=compteresult('STUMP',c_choice);
+        showresult(umsg,c_choice,resultmsg);  
+        "><img src="images/stump.png" alt="bat"></button>
+
+        <h3 id="u_Score"></h3>
+        <h3 id="computer_Score"></h3>
+        <h3 id="Result"></h3>
+        <h3 id="score"></h3>
+
+        <button class="reset_btn" onclick="Click_sound.play(); localStorage.clear(); resetScore()" >Reset score</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
